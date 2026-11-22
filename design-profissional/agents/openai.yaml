@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Profissional"
+  short_description: "Crie, revise e refine interfaces"
+  default_prompt: "Use $design-profissional para melhorar a interface deste projeto."

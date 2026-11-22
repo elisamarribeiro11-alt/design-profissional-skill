@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fila de pedidos fictícia</title>
+  <style>
+    body { font: 16px system-ui; background: #fcfcfc; color: #333; }
+    main { width: 820px; margin: 30px auto; }
+    h1 { margin-left: 26px; }
+    button { cursor: pointer; }
+    .primary { background: #eaffca; color: #999; border: 0; padding: 12px; }
+    #filters { padding: 22px; border: 1px solid #aaa; }
+    #filters:not([hidden]) { animation: enter 1.4s ease-in; }
+    @keyframes enter {
+      from { margin-left: 350px; filter: blur(10px); opacity: 0.1; }
+      to { margin-left: 0; filter: blur(0); opacity: 1; }
+    }
+    table { width: 100%; margin-top: 7px; border-collapse: collapse; }
+    th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Pedidos em andamento</h1>
+  <button type="button" class="primary" id="toggle" aria-controls="filters" aria-expanded="false">Filtros</button>
+  <section id="filters" hidden>
+    <label for="status">Status</label>
+    <select id="status">
+      <option value="">Todos</option>
+      <option value="aberto">Aberto</option>
+      <option value="pronto">Pronto</option>
+    </select>
+  </section>
+  <table>
+    <thead><tr><th scope="col">Pedido</th><th scope="col">Status</th><th scope="col">Prazo</th></tr></thead>
+    <tbody>
+      <tr data-status="aberto"><td>118</td><td>Aberto</td><td>Hoje</td></tr>
+      <tr data-status="pronto"><td>119</td><td>Pronto</td><td>Hoje</td></tr>
+    </tbody>
+  </table>
+  <p id="summary" aria-live="polite">2 pedidos</p>
+</main>
+<script>
+  const toggle = document.querySelector('#toggle');
+  const filters = document.querySelector('#filters');
+  const status = document.querySelector('#status');
+  const summary = document.querySelector('#summary');
+  const orders = Array.from(document.querySelectorAll('[data-status]'));
+
+  toggle.addEventListener('click', () => {
+    filters.hidden = !filters.hidden;
+    toggle.setAttribute('aria-expanded', String(!filters.hidden));
+  });
+
+  status.addEventListener('change', () => {
+    for (const order of orders) {
+      order.hidden = Boolean(status.value && order.dataset.status !== status.value);
+    }
+    const count = orders.filter(order => !order.hidden).length;
+    summary.textContent = count === 1 ? '1 pedido' : count + ' pedidos';
+  });
+</script>
+</body>
+</html>
