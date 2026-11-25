@@ -34,6 +34,22 @@ Nos modos `criar`, `melhorar` e `auditar`, leia e execute integralmente o [check
 
 Antes de considerar concluído, revise desktop e mobile, identidade e formulários aplicáveis; teste Android e iOS com teclado virtual, modais e checkout quando aplicáveis e disponíveis. Registre aparelho ou emulador, ambiente, rota, estado e resultado. Emulação de viewport não prova comportamento do teclado físico. Se não puder testar, registre NV e não declare aprovação global. Achados críticos de avaliações falsas, promessas enganosas, formulários essenciais bloqueados ou violações de privacidade bloqueiam aprovação independentemente da nota.
 
+## Direção de arte premium editorial e cinematográfica
+
+Nos modos `criar`, `melhorar` e `auditar`, avalie obrigatoriamente a adequação desta direção à marca, ao público e à tarefa. Priorize-a em landing pages, portfólios e vitrines quando houver intenção de impacto visual. Não imponha efeitos experimentais a formulários, dashboards ou fluxos transacionais.
+
+- Tipografia expressiva em escala fluida, títulos de grande impacto, contraste de pesos e hierarquia editorial; preserve legibilidade e quebras naturais.
+- Composição autoral com grids assimétricos, espaço negativo intencional, imagens em grande escala, sobreposições controladas e alternância de ritmo entre seções. Evite repetição de cartões genéricos, gradientes e ornamentos sem função.
+- Direção de arte baseada na identidade real da marca; use fotografias e mídia autorizadas, enquadramento cuidadoso e tratamento visual consistente. Identifique imagens ilustrativas quando necessário.
+- Movimento cinematográfico quando pertinente: revelações progressivas, máscaras, transições entre imagens, parallax moderado e microinterações de hover/foco. Cada efeito deve ter finalidade e alternativa estática.
+- Preserve rolagem nativa, navegação por teclado, foco, contraste, conteúdo acessível e ações comerciais claras. Respeite prefers-reduced-motion; não dependa de cursor, hover ou animação para acessar conteúdo.
+- Adapte a composição ao mobile em vez de apenas reduzir o desktop. Evite cortes de conteúdo, deslocamento horizontal e efeitos que prejudiquem toque ou leitura.
+- Prefira CSS e APIs nativas para movimento simples; considere bibliotecas apenas quando justificadas pela complexidade. Priorize transform/opacity, mídia otimizada e carregamento progressivo sem atrasar conteúdo essencial.
+
+**Aplicação por modo:** em criar, defina conceito visual, composição do hero, narrativa de seções e plano de movimento antes de implementar. Em melhorar, compare a interface atual com esse conceito, preserve identidade e fluxos e corrija padrões genéricos dentro do escopo. Em auditar, avalie autoria visual, hierarquia, composição, mídia, movimento e adaptação mobile; registre evidência, impacto e correção proposta na rubrica existente, sem editar. Em animacoes, aplique as mesmas salvaguardas ao movimento solicitado.
+
+**Critérios de aceite:** inspecione desktop e mobile, verifique ausência de conteúdo cortado e scroll horizontal indevido, teste foco/toque e redução de movimento, confirme que CTAs permanecem utilizáveis e que mídia e animações não bloqueiam a navegação. Registre resultados reais e verificações não realizadas. Não copie integralmente layouts de referência nem prometa qualidade visual sem inspeção.
+
 ## Referências sob demanda
 
 | Contexto | Recurso |
