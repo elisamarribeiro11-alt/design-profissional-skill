@@ -28,6 +28,12 @@ Pedidos de planejamento e avaliação são somente leitura. No modo auditar use 
 4. **Revisão.** Percorra os nove princípios no resultado e use a [rubrica de 14 dimensões](references/auditoria-visual.md) quando houver superfície observável. Registre impacto, evidência e prioridade. Corrija dentro do escopo autorizado. Se não houver acesso à interface, apresente o que foi inspecionado e o que falta observar, sem pontuação visual presumida.
 5. **Validação.** Execute os testes aplicáveis do projeto quando disponíveis. Confira viewports estreitas e largas, texto real, zoom, teclado, foco, toque, estados dos fluxos, console e requisições relacionadas. Quando houver movimento, confira redução de movimento e capture um perfil do fluxo na ferramenta disponível. Faça capturas comparáveis no mesmo estado, tamanho e tema quando autorizado. Informe o ambiente, os resultados efetivamente observados e as verificações pendentes. Use evidências de execução para afirmar aprovações.
 
+## Controle obrigatório de qualidade comercial
+
+Nos modos `criar`, `melhorar` e `auditar`, leia e execute integralmente o [checklist dos 11 critérios](references/qualidade-comercial.md), inclusive quando o pedido tiver escopo parcial. Classifique cada critério como conforme, problema, NV ou NA com justificativa e evidência; NV nunca equivale a aprovação. Mapeie os achados à rubrica existente, sem criar dimensões novas. Preserve o modo `auditar` somente leitura: recomende correções e não edite o projeto. Em `criar` e `melhorar`, corrija o que estiver autorizado e registre qualquer problema fora do escopo como pendente.
+
+Antes de considerar concluído, revise desktop e mobile, identidade e formulários aplicáveis; teste Android e iOS com teclado virtual, modais e checkout quando aplicáveis e disponíveis. Registre aparelho ou emulador, ambiente, rota, estado e resultado. Emulação de viewport não prova comportamento do teclado físico. Se não puder testar, registre NV e não declare aprovação global. Achados críticos de avaliações falsas, promessas enganosas, formulários essenciais bloqueados ou violações de privacidade bloqueiam aprovação independentemente da nota.
+
 ## Referências sob demanda
 
 | Contexto | Recurso |

@@ -37,3 +37,9 @@ Apresente nota, justificativa e evidência. Em dimensões mistas, explicite que 
 - **P2** para ajuste localizado de coerência ou polimento.
 
 Associe cada achado a uma ação proposta e a uma verificação reproduzível. Se a interface não puder ser observada, reporte somente o alcance da revisão de código ou briefing e deixe as dimensões visuais como NV.
+
+## Integração dos 11 critérios
+
+Execute o [checklist comercial](qualidade-comercial.md) em criar, melhorar e auditar. Seus itens mapeiam para as 14 dimensões acima, sem adicionar dimensões nem contar o mesmo problema duas vezes na pontuação. Conteúdo comercial e privacidade exigem achados e bloqueios próprios mesmo quando não houver nota visual pertinente.
+
+A severidade do achado é **Crítico**, **Alto**, **Médio** ou **Baixo**; preserve P0/P1/P2 como prioridade operacional quando útil: Crítico normalmente P0, Alto P1, Médio ou Baixo P2, ajustando ao contexto. Avaliações falsas, promessas enganosas, preenchimento de formulário essencial impedido e violação de privacidade bloqueiam aprovação. NV e NA seguem as regras existentes; NV em verificação obrigatória impede aprovação global.

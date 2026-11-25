@@ -18,3 +18,21 @@
 
 | Verificação | Método e ambiente | Resultado observado |
 | --- | --- | --- |
+
+## Checklist comercial
+
+| Critério | Conforme / problema / NV / NA | Severidade | Evidência ou motivo | Correção e reteste |
+| --- | --- | --- | --- | --- |
+| Domínio | | | | |
+| Ícones | | | | |
+| Favicon | | | | |
+| Identidade | | | | |
+| Espaçamento | | | | |
+| Selos | | | | |
+| Teclado virtual | | | | |
+| Documentos e privacidade | | | | |
+| Promessas | | | | |
+| Avaliações | | | | |
+| Enumeração | | | | |
+
+Decisão: aprovado, bloqueado ou pendente; relacione bloqueios e testes não realizados.

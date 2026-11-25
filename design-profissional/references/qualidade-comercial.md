@@ -1,0 +1,26 @@
+# Checklist obrigatório de qualidade comercial
+
+Use nos modos criar, melhorar e auditar. Para cada item registre conforme, problema, NV (não verificado) ou NA (não aplicável, com motivo), evidência e correção. Avalie todo o projeto acessível, inclusive quando a mudança for pequena; não afirme que inspecionou o que não viu. Em auditar, não altere arquivos, configurações nem dados. Em criar e melhorar corrija dentro do escopo autorizado e reporte pendências fora dele. Um projeto só é aprovado depois de todos os itens aplicáveis verificados e bloqueios resolvidos.
+
+| Critério | Prevenção, identificação e correção | Dimensões existentes |
+| --- | --- | --- |
+| Domínio profissional | Recomende domínio próprio para produção comercial; domínios Vercel, Netlify e similares são aceitáveis em demonstração, teste ou com aprovação do cliente. Confirme domínio e destino em ambiente publicado antes de afirmar que está configurado; sem acesso, NV. | Usabilidade, Consistência |
+| Ícones | Não substitua ícones de interface por emojis; use Lucide, Phosphor ou SVG personalizado adequado à stack, com tamanho, traço e estilo coerentes. | Consistência, Acessibilidade |
+| Favicon | Crie favicon personalizado coerente com a marca e remova o padrão de framework ou plataforma; verifique carregamento e apresentação no navegador, inclusive após build. | Consistência |
+| Identidade visual | Priorize logo original autorizada; se indisponível, desenvolva identidade personalizada adequada ao escopo. Não trate texto em fonte genérica como identidade completa. Logotipo tipográfico intencional e profissional é permitido. Verifique aplicação coerente. | Consistência, Hierarquia |
+| Espaçamento | Defina escala e tokens reutilizáveis, aplique a margens, paddings, cards, títulos, botões e seções; revise viewports diferentes e exceções justificadas. | Espaçamento, Consistência, Responsividade |
+| Selos de plataforma | Identifique marcas padrão de Lovable, Vercel, Netlify e similares; remova apenas se não fizerem parte da marca e se termos e plano permitirem. Preserve atribuições obrigatórias; sem confirmação, registre pendência. | Consistência |
+| Teclado virtual | Teste formulário, modal e checkout aplicáveis com teclado aberto em Android e iOS; o campo ativo deve permanecer visível e utilizável ao rolar, inclusive em viewport variável, safe areas e com elementos fixos. Use type, autocomplete e inputmode apropriados. Emulador de viewport sem teclado real não comprova o comportamento; registre limitações por plataforma. | Usabilidade, Responsividade, Acessibilidade |
+| Documentos legais e privacidade | Identifique necessidade de Política de Privacidade, Termos de Uso, Política de Cookies e outros documentos conforme operação e jurisdição, inclusive LGPD quando aplicável. Disponibilize links acessíveis aos aplicáveis; inventarie tratamento real e consentimento quando cabível. Não invente identidade, práticas ou texto jurídico como fato; sinalize lacunas e revisão jurídica. Uma violação identificada de privacidade é bloqueante. | Usabilidade, Acessibilidade |
+| Promessas | Exija evidência verificável para números de clientes, faturamento, economia, conversão, satisfação, garantias e resultados. Remova ou substitua afirmações sem comprovação; promessas enganosas bloqueiam aprovação. | Hierarquia, Usabilidade |
+| Avaliações | Proíba depoimentos, avaliações, nomes, fotos e classificações fictícias apresentados como reais. Use somente avaliações autênticas e autorizadas ou provas legítimas alternativas. Dados de demonstração devem ser identificados claramente e removidos antes de publicação comercial. Avaliações falsas bloqueiam aprovação. | Consistência, Usabilidade |
+| Enumeração | Retire 01, 02 e 03 decorativos sem função de cards, benefícios, serviços e seções; permita sequência lógica, etapas, instruções ou justificativa visual consistente. | Hierarquia, Consistência |
+
+## Evidência e decisão
+
+- Inspecione desktop e mobile com rota, estado, resolução, tema, navegador e captura ou registro reproduzível. Confira identidade e favicon no navegador.
+- Exercite formulários aplicáveis, erro e sucesso com dados de teste sem efeitos externos. Em Android e iOS, registre aparelho ou emulador, navegador, teclado aberto, campo em foco e resultado, inclusive modal e checkout. Se indisponível, NV para a plataforma; não confunda viewport simulada com teste de teclado.
+- Para domínio, marca, provas e documentos, registre fonte e alcance da verificação. Não afirme configuração, autorização ou conformidade jurídica sem prova.
+- **Crítico:** avaliações falsas, promessas enganosas, violação de privacidade ou formulário essencial impedido de preencher; bloqueia aprovação. Outros bloqueios graves de tarefa também são críticos.
+- **Alto:** falha relevante de acesso, uso, privacidade potencial ou ausência de informação essencial sem violação confirmada; priorize correção. **Médio:** inconsistência recorrente ou falta de elemento que prejudica confiança ou experiência. **Baixo:** detalhe localizado sem impacto relevante na tarefa.
+- Escalone pela gravidade e contexto. Uma suspeita não comprovada é NV ou investigação, não violação comprovada. Falta de teste obrigatório impede aprovação global, não implica falha comprovada. Registre todos os bloqueios, correções e evidência de reteste.

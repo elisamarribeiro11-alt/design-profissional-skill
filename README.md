@@ -1,5 +1,7 @@
 # Design Profissional
 
+Versão 1.1.0.
+
 Skill de direção de arte, UI/UX e engenharia de frontend para Codex e Claude Code. Planeja, cria e melhora interfaces com base na tarefa do usuário, na marca e nas restrições do projeto. Audita o resultado com nove princípios de design e uma rubrica de 14 dimensões.
 
 Funciona com HTML/CSS/JS, React, Vue, Svelte, frameworks web, PWA, React Native, Flutter, SwiftUI, Android nativo e outras stacks de interface. A execução e os testes dependem das ferramentas do projeto.
@@ -37,6 +39,12 @@ Acrescente o pedido após o modo. Em ambientes que não expõem atalhos, escreva
 - “Melhore o formulário desta landing page. Preserve o endpoint e teste envio, erro e sucesso.”
 - “Audite o dashboard em 360 e 1280 px. Priorize os problemas que atrasam o atendimento e cite a evidência de cada nota.”
 - “Otimize as animações dos filtros. Confira cliques rápidos, movimento reduzido e o tempo de quadro no ambiente disponível.”
+
+## Controle de qualidade comercial
+
+Nos modos criar, melhorar e auditar, a skill verifica 11 critérios de identidade, domínio, conteúdo comercial, privacidade e formulários. As verificações se integram à rubrica de 14 dimensões; fatos não verificados permanecem pendentes. Avaliações falsas, promessas enganosas, violações de privacidade e formulários essenciais bloqueados impedem aprovação. O modo auditar permanece somente leitura.
+
+Execute as verificações estruturais com `python3 -m unittest discover -s tests -v`. Elas verificam a presença das regras e não substituem a avaliação do comportamento do agente nem testes reais em Android e iOS.
 
 ## Limitações
 

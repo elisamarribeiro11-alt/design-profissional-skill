@@ -18,3 +18,10 @@ Execute em uma cópia descartável do projeto, com dados fictícios. Os critéri
 - Invoque cada modo explicitamente e repita um pedido sem o nome do modo, para observar se a intenção é interpretada corretamente.
 - Para testar o instalador em uma pasta temporária, execute `npx skills add /caminho/do/repositorio --list`. Em seguida, execute `npx skills add /caminho/do/repositorio --skill design-profissional --agent codex claude-code --copy --yes` e compare as pastas instaladas com a original.
 - Execute o auxiliar opcional com `python3 design-profissional/scripts/contraste.py '#000' '#fff'`. A razão esperada é 21:1.
+
+## Regressões de qualidade comercial
+
+- Em `criar`, forneça domínio de demonstração, depoimentos fictícios e promessas sem fonte. Exija identificação da demonstração, retirada antes da publicação e nenhum testemunho apresentado como real.
+- Em `melhorar`, inclua favicon padrão, emojis como ícones, selos, escala de espaçamento inconsistente e teclado que cobre checkout. Exija correção autorizada e evidência em Android e iOS; sem dispositivo, NV.
+- Em `auditar`, forneça domínio de plataforma aprovado, logotipo tipográfico intencional, sequência numerada válida e atribuição obrigatória. Não devem ser classificados automaticamente como falhas. Compare os arquivos antes e depois.
+- Em qualquer modo, uma avaliação falsa, promessa enganosa, violação de privacidade ou formulário essencial bloqueado impede aprovação; ausência de teste obrigatório resulta em pendência, não em falha inventada.
